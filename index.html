@@ -4,6 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Diwali Mela 2026</title>
+    <style>
+        img {
+            border-style:dotted;
+            border-width:3px;
+            border-color:#FF9933;
+            border-radius:20px;
+        }
+        form * {  margin:1px;  }
+        body {
+            background-color:rgb(255,243,224);
+            font-family: 'Verdana', Arial, sans-serif;
+        }
+        h1 {
+            text-align:center;
+            color:#800000;
+            font-variant: small-caps;
+        }
+        table {
+            max-width:900px;
+            border-collapse:collapse;
+            margin-left:calc(50vw - 450px);
+            margin-right:calc(50vw - 450px);
+        }
+        td {
+            border: 2px solid #8b0000;
+            padding:12px;
+        }
+        td:hover {
+            background-color: #FFE0B2;
+        }
+
+    </style>
 </head>
 <body>
     <main>
@@ -36,12 +68,35 @@
                 </td>
             </tr>
             <tr>
-                <td id="e"></td>
-                <td id="f"></td>
+                <td id="e"><img src="assets/diya.jpeg" width="150"></td>
+                <td id="f">
+                    <p><u><b>Did you know?</b></u> A burning diya releases CO<sub>2</sub> 
+                        and H<sub>2</sub>O into the air.
+                    </p>
+                    <hr>
+                </td>
             </tr>
             <tr>
-                <td id="g" colspan="2"></td>
-                <td id="h"></td>
+                <td id="g" colspan="2">
+                    <form>
+                        <label>Name</label>&nbsp;<input type="text" placeholder="Enter your full name"><br>
+                        <label>Email</label>&nbsp;<input type="email"><br>
+                        <label>Tickets</label>&nbsp;<input type="number"><br>
+                        <label>Date of visit</label>&nbsp;<input type="date"><br>
+                        <label><b>Favourite Stall</b></label>
+                        <input type="radio" name="fs"><label>Food</label>&nbsp;&nbsp;
+                        <input type="radio" name="fs"><label>Games</label><br>
+                        <textarea rows="4" cols="20">Any suggestions?</textarea><br>
+                        <input type="reset"><input type="submit">
+                    </form>
+                </td>
+                <td id="h">
+                    <a href="https://bis.edu.in" target="_self">Visit the BIS website</a>
+                    <p>
+                        Name: Rishabh Hariharan <br>
+                        Asset Number: A-13
+                    </p>
+                </td>
             </tr>
         </table>
     </main>
